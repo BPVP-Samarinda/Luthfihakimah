@@ -29,7 +29,6 @@ class ProdukResource extends Resource
                 Forms\Components\FileUpload::make('gambar')
                 ->preserveFilenames()
                 ->image() 
-                ->minSize(1)
                 ->maxSize(100),
                 Forms\Components\TextInput::make('harga'),
                 Forms\Components\TextInput::make('stok'),
@@ -43,7 +42,7 @@ class ProdukResource extends Resource
                 Tables\Columns\TextColumn::make('nama'),
                 Tables\Columns\TextColumn::make('kategori.nama'),
                 Tables\Columns\TextColumn::make('deskripsi'),
-                Tables\Columns\TextColumn::make('gambar'),
+                Tables\Columns\ImageColumn::make('gambar'),
                 Tables\Columns\TextColumn::make('harga'),
                 Tables\Columns\TextColumn::make('stok')
             ])
