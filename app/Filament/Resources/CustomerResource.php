@@ -26,7 +26,6 @@ class CustomerResource extends Resource
                 Forms\Components\TextInput::make('nama_depan'),
                 Forms\Components\TextInput::make('nama_belakang'),
                 Forms\Components\Textarea::make('alamat'),
-                
                 Forms\Components\TextInput::make('hp'),
                 Forms\Components\FileUpload::make('foto')
                 ->preserveFilenames()
@@ -43,7 +42,7 @@ class CustomerResource extends Resource
                 Tables\Columns\TextColumn::make('nama_belakang'),
                 Tables\Columns\TextColumn::make('alamat'),
                 Tables\Columns\TextColumn::make('hp'),
-                Tables\Columns\TextColumn::make('foto'),
+                Tables\Columns\ImageColumn::make('foto'),
             ])
             ->filters([
                 //
