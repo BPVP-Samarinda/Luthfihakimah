@@ -25,7 +25,7 @@ class PembeliResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('nama_lengkap')->columnSpan('full'),
                 Forms\Components\TextInput::make('pembelian'),
-                Forms\Components\TextArea::make('deskripsi'),
+                Forms\Components\Textarea::make('deskripsi'),
             ]);
     }
 
